@@ -1,0 +1,17 @@
+package connection;
+
+import elements.AbstractGroup;
+
+public class Group extends AbstractGroup {
+
+    @Override
+    public void includeUser(int id) {
+        this.members.add(id); // на сервере находим группу по id и добавляем в неё пользователя
+    }
+
+    @Override
+    public void excludeUser(int id) {
+        this.members.remove(members.indexOf(id));
+    }
+
+}
