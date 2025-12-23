@@ -28,14 +28,6 @@ public class HelloController implements Initializable {
     @FXML
     private TextField receivedMsg;
 
-//    @FXML
-//    TextField localTf;
-
-//    private void initLocal() {
-//        localTf = tf;
-//        localTf.setText("local!");
-//    }
-
     @FXML
     private Button serverButton;
 

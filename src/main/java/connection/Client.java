@@ -9,14 +9,11 @@ public class Client {
 
     static ServerConnectManager scm = new ServerConnectManager("127.0.0.1", 8080);
 
-    /* static InputManager input = new InputManager(); */
-
     public static HashMap<String, ArrayList<String>> map = new HashMap<>(20);
 
     public static void launch() {
         scm.connect();
         System.out.println("Я жив!");
-    /* input.processInput();*/
     }
 
     /**

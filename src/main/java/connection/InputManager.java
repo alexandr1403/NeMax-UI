@@ -2,15 +2,9 @@ package connection;
 
 import cli.CommandProcessor;
 
-import java.util.Scanner;
-
 import static cli.CommandResults.PHANTOM_COMMAND;
 
 public class InputManager {
-
-    public InputManager() {
-//        this.processInput();
-    }
 
     private String input;
 
@@ -23,7 +17,6 @@ public class InputManager {
     }
 
     private final CommandProcessor commandProcessor = new CommandProcessor();
-//    private final Scanner in = new Scanner(System.in);
 
     protected String message;
 
@@ -57,14 +50,6 @@ public class InputManager {
     public void processInput() {
         int i = 0;
         while (i < 1) {
-
-//            if (!in.hasNextLine()) {
-//                exit();
-//                return;
-//            }
-
-//            var msg = in.nextLine();
-
             var msg = this.input;
             i++;
 
