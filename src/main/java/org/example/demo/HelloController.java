@@ -43,13 +43,11 @@ public class HelloController implements Initializable {
 
     @FXML
     public void showServerResult() {
-        serverButton.setOnAction((event) -> {
             ServerCommands.initGeneral();
             CompletableFuture.supplyAsync(() -> {
                 Client.launch();
                 return null;
             });
-        });
     }
 
     public static String getMsg() { return MSG.get(); }
